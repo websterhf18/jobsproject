@@ -6,7 +6,16 @@
   padding: 6rem;
   min-height: 100vh;
 }
+.job {
+  margin-bottom: 15px;
+  color: gray;
+  font-family: 'Times New Roman', Times, serif;
+}
+.job:hover{
+  color: white;
+  font-weight: bold;
 
+}
 .description {
   display: inherit;
   justify-content: inherit;

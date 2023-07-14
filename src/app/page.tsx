@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import styles from './page.module.css'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -9,6 +10,11 @@ export default function Home() {
           Get started by editing&nbsp;
           <code className={styles.code}>Nicolas</code>
         </p>
+        <div>
+          <Link href="/job-detail" className={styles.job}>Job Detail</Link>
+          <Link href="/job-list" className={styles.job}>Job List</Link>
+          <Link href="/create-job" className={styles.job}>Create a Job</Link>
+        </div>
         <div>
           <a
             href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
