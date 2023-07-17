@@ -1,6 +1,6 @@
-import Image from 'next/image'
-import styles from './page.module.css'
-import Link from 'next/link'
+import Image from "next/image";
+import styles from "./page.module.css";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -11,9 +11,15 @@ export default function Home() {
           <code className={styles.code}>Nicolas</code>
         </p>
         <div>
-          <Link href="/job-detail" className={styles.job}>Job Detail</Link>
-          <Link href="/job-list" className={styles.job}>Job List</Link>
-          <Link href="/create-job" className={styles.job}>Create a Job</Link>
+          <Link href="/job-detail" className={styles.job}>
+            Job Detail
+          </Link>
+          <Link href="/job-list" className={styles.job}>
+            Job List
+          </Link>
+          <Link href="/create-job" className={styles.job}>
+            Create a Job
+          </Link>
         </div>
         <div>
           <a
@@ -21,7 +27,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            By{' '}
+            By{" "}
             <Image
               src="/vercel.svg"
               alt="Vercel Logo"
@@ -97,5 +103,5 @@ export default function Home() {
         </a>
       </div>
     </main>
-  )
+  );
 }
