@@ -1,15 +1,19 @@
+"use client"
 import Link from "next/link";
+import { ChakraProvider } from "@chakra-ui/react";
+import Navbar from "./Navbar";
+import Hero from "./hero";
 
 export default function JobList () {
     return (
-        <><nav>
-            <ul>
-                <li>
-                    <Link href="/">Home</Link >
-                </li>
-            </ul>
-        </nav>
-        <h1>Job List</h1></>
+        <html>
+            <body>
+             <ChakraProvider>
+             <Navbar/>
+             <Hero />
+             </ChakraProvider>
+            </body>
         
+        </html>
     )
 }
