@@ -29,14 +29,14 @@ export default function Navbar() {
   return (
     <Box>
       <Flex
-        bg={useColorModeValue("white", "gray.800")}
-        color={useColorModeValue("gray.600", "white")}
+        bg={useColorModeValue("gray.400", "gray.800")}
+        color={useColorModeValue("gray.600", "gray.400")}
         minH={"60px"}
         py={{ base: 2 }}
         px={{ base: 4 }}
         borderBottom={1}
         borderStyle={"solid"}
-        borderColor={useColorModeValue("gray.200", "gray.900")}
+        borderColor={useColorModeValue("black", "black")}
         align={"center"}
       >
         <Flex
@@ -57,7 +57,7 @@ export default function Navbar() {
             textAlign={useBreakpointValue({ base: "center", md: "left" })}
             fontFamily={"times"}
             fontWeight={"bold"}
-            color={useColorModeValue("blue.400", "white")}
+            color={useColorModeValue("white", "grey.400")}
           >
             Job list
           </Text>

@@ -12,7 +12,7 @@ import {
     return (
       <Flex
         w={'full'}
-        h={'100vh'}
+        h={'60vh'}
         backgroundImage={
           'url(https://images.pexels.com/photos/140945/pexels-photo-140945.jpeg?auto=compress&cs=tinysrgb&w=1000)'
         }
