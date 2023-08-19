@@ -22,7 +22,6 @@ import {
   ChevronRightIcon,
 } from "@chakra-ui/icons";
 //import Link from "next/link";
-
 export default function Navbar() {
   const { isOpen, onToggle } = useDisclosure();
 
@@ -52,27 +51,35 @@ export default function Navbar() {
             aria-label={"Toggle Navigation"}
           />
         </Flex>
+        
         <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
-          <Text
-            textAlign={useBreakpointValue({ base: "center", md: "left" })}
-            fontFamily={"times"}
-            fontWeight={"bold"}
-            color={useColorModeValue("white", "grey.400")}
-          >
-            Job list
-          </Text>
-
+            <Text
+              textAlign={useBreakpointValue({ base: "center", md: "left" })}
+              fontFamily={"times"}
+              fontWeight={"bold"}
+              color={useColorModeValue("white", "grey.400")}
+            >
+              Job list
+            </Text>
           <Flex display={{ base: "none", md: "flex" }} ml={10}>
             <DesktopNav />
+            
           </Flex>
         </Flex>
-
+        <Stack spacing={'60px'}>
+            <Box bg={'white'} w={'200px'} h={'30px'} borderRadius={'20px'} >
+              <Text>
+                Search
+              </Text>
+            </Box>
+          </Stack>
         <Stack
           flex={{ base: 1, md: 0 }}
           justify={"flex-end"}
           direction={"row"}
           spacing={6}
         >
+          
           <Button
             display={{ base: "none", md: "inline-flex" }}
             fontSize={"sm"}

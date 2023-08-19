@@ -4,7 +4,6 @@ import Link from "next/link";
 import { ChakraProvider, Icon, grid, ring } from "@chakra-ui/react";
 import Navbar from "./Navbar";
 import Hero from "./hero";
-import Contenido from "./contenido";
 import { 
   Stack,
   Heading,
