@@ -4,7 +4,13 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className={styles.main}>
-      <p className={styles.text}>Dale click a las palabras para ser llevado <br></br> a otra pagina con más estilos e información</p>
+      <nav className={styles.nav}>
+      
+        <p className={styles.text}>Home Page</p>
+
+        <p className={styles.navleft}>LMaster96</p>
+
+      </nav>
         <div className={styles.jobDiv}>
           <Link href="/job-detail" className={styles.job}>
             Job Detail
